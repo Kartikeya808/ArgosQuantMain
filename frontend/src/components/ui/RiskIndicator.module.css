@@ -1,0 +1,95 @@
+.wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-5);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-tight);
+  border-radius: var(--radius-xs);
+  padding: var(--sp-2) var(--sp-4);
+  border: 1px solid transparent;
+}
+
+.md .chip {
+  font-size: var(--fs-xs);
+}
+.sm .chip {
+  font-size: var(--fs-2xs);
+  padding: var(--sp-1) var(--sp-3);
+}
+
+.chipDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.score {
+  font-family: var(--font-mono);
+  margin-left: var(--sp-2);
+  opacity: 0.85;
+}
+
+.low {
+  color: var(--risk-low);
+}
+.chip.low {
+  background: rgba(56, 193, 114, 0.12);
+  border-color: rgba(56, 193, 114, 0.35);
+}
+.moderate {
+  color: var(--risk-moderate);
+}
+.chip.moderate {
+  background: var(--accent-soft);
+  border-color: var(--border-accent);
+}
+.elevated {
+  color: var(--risk-elevated);
+}
+.chip.elevated {
+  background: rgba(255, 143, 63, 0.12);
+  border-color: rgba(255, 143, 63, 0.4);
+}
+.high {
+  color: var(--risk-high);
+}
+.chip.high {
+  background: var(--neg-soft);
+  border-color: rgba(239, 83, 80, 0.4);
+}
+
+/* segmented bar */
+.bar {
+  display: inline-flex;
+  gap: 3px;
+}
+.seg {
+  width: 16px;
+  height: 5px;
+  border-radius: 2px;
+  background: var(--border-strong);
+  transition: background var(--dur) var(--ease);
+}
+.sm .seg {
+  width: 12px;
+  height: 4px;
+}
+.seg.low[data-on="true"] {
+  background: var(--risk-low);
+}
+.seg.moderate[data-on="true"] {
+  background: var(--risk-moderate);
+}
+.seg.elevated[data-on="true"] {
+  background: var(--risk-elevated);
+}
+.seg.high[data-on="true"] {
+  background: var(--risk-high);
+}

@@ -1,0 +1,36 @@
+# Local dev dependencies for ArgosQuant: Postgres (primary store) + Redis (market-data cache).
+# The Java backend runs on the host via `mvn spring-boot:run` and connects to these.
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: argos-postgres
+    environment:
+      POSTGRES_DB: argosquant
+      POSTGRES_USER: argos
+      POSTGRES_PASSWORD: argos
+    ports:
+      - "5432:5432"
+    volumes:
+      - argos-pg-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U argos -d argosquant"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: argos-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - argos-redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  argos-pg-data:
+  argos-redis-data:

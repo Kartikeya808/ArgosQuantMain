@@ -1,0 +1,54 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--sp-12) var(--sp-8);
+  gap: var(--sp-5);
+}
+
+.compact {
+  padding: var(--sp-9) var(--sp-6);
+  gap: var(--sp-4);
+}
+
+.iconCircle {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+}
+.compact .iconCircle {
+  width: 44px;
+  height: 44px;
+}
+
+.neutral {
+  background: var(--bg-2);
+  color: var(--text-muted);
+}
+.danger {
+  background: var(--neg-soft);
+  color: var(--neg);
+  border-color: rgba(239, 83, 80, 0.3);
+}
+
+.title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+
+.desc {
+  font-size: var(--fs-base);
+  color: var(--text-secondary);
+  max-width: 360px;
+  line-height: var(--lh-normal);
+}
+
+.action {
+  margin-top: var(--sp-3);
+}

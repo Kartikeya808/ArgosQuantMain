@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: argosquant-web
+
+server:
+  port: 8080
+
+# Datasource is built by argosquant-core (DataSourceFactory) from ARGOS_DB_*
+# environment variables, not by Spring Boot auto-configuration.
+logging:
+  level:
+    com.argosquant: INFO

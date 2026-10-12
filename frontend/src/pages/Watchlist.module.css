@@ -1,0 +1,39 @@
+.panel {
+  overflow: hidden;
+}
+
+.toolbar {
+  display: flex;
+  gap: var(--sp-4);
+  padding: var(--sp-7) var(--sp-7) var(--sp-5);
+  flex-wrap: wrap;
+}
+.search {
+  flex: 1;
+  min-width: 220px;
+}
+
+.symCell {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.sym {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+.company {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+.rowActions {
+  display: inline-flex;
+  gap: var(--sp-2);
+  justify-content: flex-end;
+}
+
+.emptyWrap {
+  padding: var(--sp-9) var(--sp-7) var(--sp-12);
+}

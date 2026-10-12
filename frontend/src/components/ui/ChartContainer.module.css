@@ -1,0 +1,39 @@
+.body {
+  position: relative;
+  width: 100%;
+}
+
+.loading {
+  width: 100%;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-6);
+  margin-bottom: var(--sp-6);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-sm);
+}
+
+.swatch {
+  width: 12px;
+  height: 3px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legendLabel {
+  color: var(--text-secondary);
+}
+
+.legendValue {
+  font-family: var(--font-mono);
+  color: var(--text-primary);
+  font-weight: var(--fw-medium);
+}

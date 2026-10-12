@@ -1,0 +1,92 @@
+.indices {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-5);
+  margin-bottom: var(--sp-7);
+}
+
+.indexCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.indexTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.indexName {
+  display: block;
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-md);
+  color: var(--text-primary);
+  letter-spacing: var(--ls-tight);
+}
+.indexFull {
+  display: block;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+}
+
+.indexValue {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+
+.indexBottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+.indexChange {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+}
+
+.panel {
+  overflow: hidden;
+}
+.panelHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-5);
+  padding: var(--sp-7) var(--sp-7) var(--sp-5);
+  flex-wrap: wrap;
+}
+.panelActions {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-5);
+  flex-wrap: wrap;
+}
+
+.symCell {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.sym {
+  font-family: var(--font-mono);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+.company {
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+@media (max-width: 1200px) {
+  .indices {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .indices {
+    grid-template-columns: 1fr;
+  }
+}

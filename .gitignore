@@ -1,0 +1,27 @@
+# Maven
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Node (frontend)
+node_modules/
+frontend/dist/
+
+# Env
+.env
+
+# Claude local settings
+.claude/settings.local.json

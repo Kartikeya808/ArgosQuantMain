@@ -1,0 +1,141 @@
+/* =====================================================================
+   ArgosQuant Design Tokens
+   Bloomberg Terminal × Modern Quant Workstation × Premium Fintech
+   Dark terminal-first. Amber accent. Dense financial data.
+   ===================================================================== */
+
+:root {
+  /* ---------- Background surfaces (darkest -> raised) ---------- */
+  --bg-0: #0b0d0f; /* app canvas */
+  --bg-1: #111417; /* panels / sidebar */
+  --bg-2: #15191d; /* cards / inputs */
+  --bg-3: #1b2025; /* raised / hover / headers */
+  --bg-overlay: rgba(5, 7, 9, 0.72);
+
+  /* ---------- Accent (amber / orange) ---------- */
+  --accent: #f5a623;
+  --accent-bright: #ffb84d;
+  --accent-dim: #b87918;
+  --accent-soft: rgba(245, 166, 35, 0.12);
+  --accent-soft-strong: rgba(245, 166, 35, 0.22);
+
+  /* ---------- Financial semantics ---------- */
+  --pos: #38c172;
+  --neg: #ef5350;
+  --neu: #9aa3ad;
+  --pos-soft: rgba(56, 193, 114, 0.14);
+  --neg-soft: rgba(239, 83, 80, 0.14);
+  --neu-soft: rgba(154, 163, 173, 0.12);
+
+  /* ---------- Risk scale ---------- */
+  --risk-low: #38c172;
+  --risk-moderate: #f5a623;
+  --risk-elevated: #ff8f3f;
+  --risk-high: #ef5350;
+
+  /* ---------- Text ---------- */
+  --text-primary: #e8edf2;
+  --text-secondary: #9aa3ad;
+  --text-muted: #5f6b76;
+  --text-inverse: #0b0d0f;
+  --text-accent: #ffb84d;
+
+  /* ---------- Borders / dividers ---------- */
+  --border: #23292f;
+  --border-strong: #2f3740;
+  --border-subtle: #1a1f24;
+  --border-accent: rgba(245, 166, 35, 0.45);
+
+  /* ---------- Chart palette (categorical, terminal-tuned) ---------- */
+  --chart-1: #f5a623;
+  --chart-2: #4a9fe0;
+  --chart-3: #38c172;
+  --chart-4: #b06fd6;
+  --chart-5: #e0714a;
+  --chart-6: #46c6c6;
+  --chart-7: #d4b94a;
+  --chart-8: #6b7785;
+  --chart-grid: #1f252b;
+  --chart-axis: #5f6b76;
+
+  /* ---------- Typography ---------- */
+  --font-ui: "Inter", "Geist", "IBM Plex Sans", system-ui, -apple-system,
+    sans-serif;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, "SF Mono",
+    Menlo, monospace;
+
+  --fs-2xs: 10px;
+  --fs-xs: 11px;
+  --fs-sm: 12px;
+  --fs-base: 13px;
+  --fs-md: 14px;
+  --fs-lg: 16px;
+  --fs-xl: 20px;
+  --fs-2xl: 26px;
+  --fs-3xl: 34px;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.45;
+
+  --ls-tight: -0.01em;
+  --ls-wide: 0.04em;
+  --ls-caps: 0.08em;
+
+  /* ---------- Spacing (4px base) ---------- */
+  --sp-0: 0;
+  --sp-1: 2px;
+  --sp-2: 4px;
+  --sp-3: 6px;
+  --sp-4: 8px;
+  --sp-5: 12px;
+  --sp-6: 16px;
+  --sp-7: 20px;
+  --sp-8: 24px;
+  --sp-9: 32px;
+  --sp-10: 40px;
+  --sp-12: 48px;
+
+  /* ---------- Radii ---------- */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 10px;
+  --radius-full: 999px;
+
+  /* ---------- Shadows (subtle, terminal-restrained) ---------- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 0 1px var(--border-accent), 0 0 18px rgba(245, 166, 35, 0.15);
+
+  /* ---------- Layout ---------- */
+  --sidebar-w: 236px;
+  --sidebar-w-collapsed: 64px;
+  --header-h: 56px;
+  --content-max: 1680px;
+
+  /* ---------- Motion (restrained) ---------- */
+  --ease: cubic-bezier(0.2, 0, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur: 180ms;
+  --dur-slow: 280ms;
+
+  /* ---------- Z-index scale ---------- */
+  --z-sticky: 50;
+  --z-drawer: 400;
+  --z-modal: 500;
+  --z-toast: 600;
+  --z-tooltip: 700;
+}
+
+/* Responsive breakpoints are referenced in component CSS via media queries:
+   --bp-sm: 640px   (large phone)
+   --bp-md: 900px   (tablet)
+   --bp-lg: 1200px  (laptop)
+   --bp-xl: 1536px  (desktop — primary experience)
+   Kept as a documented convention; CSS custom props cannot drive @media. */

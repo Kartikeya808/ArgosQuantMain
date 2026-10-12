@@ -1,0 +1,159 @@
+/* ArgosQuant desktop — dark theme matching the web client's palette. */
+
+.root {
+    -fx-background-color: #0b0d12;
+    -fx-font-family: "Inter", "Helvetica Neue", "Segoe UI", sans-serif;
+}
+
+.label {
+    -fx-text-fill: #cfd6e4;
+}
+
+/* ---- inputs ---- */
+.text-field,
+.password-field {
+    -fx-background-color: #1d212b;
+    -fx-text-fill: #f4f6fb;
+    -fx-prompt-text-fill: #6b7488;
+    -fx-background-radius: 6;
+    -fx-border-color: #2a3042;
+    -fx-border-radius: 6;
+    -fx-padding: 8 10;
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #4f7cff;
+}
+
+/* ---- buttons ---- */
+.button {
+    -fx-background-color: #262d41;
+    -fx-text-fill: #f4f6fb;
+    -fx-background-radius: 6;
+    -fx-padding: 8 16;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #313a54;
+}
+
+.button.primary {
+    -fx-background-color: #4f7cff;
+    -fx-font-weight: bold;
+}
+
+.button.primary:hover {
+    -fx-background-color: #6b92ff;
+}
+
+.button.danger {
+    -fx-background-color: #3a2230;
+    -fx-text-fill: #ff8a8a;
+}
+
+.button.danger:hover {
+    -fx-background-color: #52303f;
+}
+
+/* ---- combo box ---- */
+.combo-box {
+    -fx-background-color: #1d212b;
+    -fx-background-radius: 6;
+    -fx-border-color: #2a3042;
+    -fx-border-radius: 6;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #f4f6fb;
+    -fx-background-color: #1d212b;
+    -fx-padding: 6 10;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #1d212b;
+    -fx-border-color: #2a3042;
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: #2a3350;
+}
+
+/* ---- table ---- */
+.table-view {
+    -fx-background-color: #12151d;
+    -fx-control-inner-background: #12151d;
+    -fx-table-cell-border-color: transparent;
+    -fx-border-color: #232838;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1d212b;
+    -fx-background-radius: 8 8 0 0;
+}
+
+.table-view .column-header,
+.table-view .filler {
+    -fx-background-color: transparent;
+    -fx-size: 34;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #97a0b5;
+    -fx-font-weight: bold;
+    -fx-alignment: center-left;
+}
+
+.table-row-cell {
+    -fx-background-color: #12151d;
+    -fx-border-color: transparent transparent #1b1f29 transparent;
+    -fx-cell-size: 32;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #151925;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #2a3350;
+}
+
+.table-cell {
+    -fx-text-fill: #e6ebf5;
+    -fx-alignment: center-left;
+    -fx-padding: 4 10;
+}
+
+.table-view .placeholder .label {
+    -fx-text-fill: #6b7488;
+}
+
+/* ---- tabs ---- */
+.tab-pane .tab-header-background {
+    -fx-background-color: #0b0d12;
+}
+
+.tab {
+    -fx-background-color: #12151d;
+    -fx-background-radius: 6 6 0 0;
+    -fx-padding: 6 16;
+}
+
+.tab:selected {
+    -fx-background-color: #1d212b;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #97a0b5;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #f4f6fb;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    -fx-border-color: transparent;
+}

@@ -1,0 +1,24 @@
+.crumbs {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--fs-base);
+}
+
+.crumb {
+  color: var(--text-muted);
+  transition: color var(--dur-fast) var(--ease);
+}
+.crumb:hover {
+  color: var(--text-secondary);
+}
+
+.sep {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.current {
+  color: var(--text-primary);
+  font-weight: var(--fw-semibold);
+}
